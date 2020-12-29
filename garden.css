@@ -139,6 +139,7 @@ h3 {
     color: rgba(156, 144, 193, 0.8);
     display: grid;
     font-size: 11px;
+    font-family: monospace;
     grid-row-gap: 0.25rem;
     position: fixed;
     z-index: 4;
@@ -213,6 +214,7 @@ h3 {
         height: 100vh;
         width: 100vw;
         position: relative;
+        scroll-snap-stop: always
     }
     .obj > .obj-bg {
         display: block;
@@ -256,7 +258,7 @@ h3 {
     }
     #intro-card > div {
         display: grid;
-        grid-template-rows: 24% 7% 15% auto 1.5rem 2.8rem 4rem;
+        grid-template-rows: 125px 7% 15% auto 1.5rem 2.8rem 4rem;
         background-color: rgba(150, 226, 214, 0.7);
         padding: 2rem;
     }
@@ -275,6 +277,13 @@ h3 {
     }
     #intro-card > div > .icons {
         align-self: flex-end;
+    }
+
+    .intro-mobile {
+        display: block;
+    }
+    .intro-desktop {
+        display: none;
     }
 
     #logo {
@@ -326,12 +335,7 @@ h3 {
     #outgrate > .obj-bg {
         background-color: rgba(16,35,43,0.7);
     }
-    #intro-mobile {
-        display: block;
-    }
-    #intro-desktop {
-        display: none;
-    }
+    
 }
 
 @media only screen and (min-width: 801px) {
@@ -411,13 +415,12 @@ h3 {
         align-self: flex-end;
     }
 
-    #intro-mobile {
+    .intro-mobile {
         display: none;
     }
-    #intro-desktop {
+    .intro-desktop {
         display: block;
     }
-    
 
     .obj {
         position: absolute;
@@ -521,7 +524,7 @@ h3 {
     }
     #pipe > h3 {
         top: 35%; 
-        left: 45%;
+        left: 35%;
     }
 
     #outgrate {
