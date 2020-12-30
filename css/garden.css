@@ -86,7 +86,7 @@ a:hover {
 
 .rew-logo {
     justify-self: center;
-    background: url(../assets/rew-96.png) no-repeat;
+    background: url(../img/rew-96.png) no-repeat;
     background-size: contain;
     width: 115px;
     height: 96px;
@@ -95,13 +95,13 @@ a:hover {
     height: 64px;
 }
 .goab-logo {
-    background: url(../assets/goab-logo.svg) no-repeat;
+    background: url(../img/goab-logo.svg) no-repeat;
     background-size: contain;
     width: 240px;
     max-height: 74px;
 }
 .about-container .goab-logo {
-    background: url(../assets/goab-logo-centered.svg) no-repeat;
+    background: url(../img/goab-logo-centered.svg) no-repeat;
     width: 400px;
     max-width: 90%;
     max-height: 124px;
